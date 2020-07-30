@@ -16,40 +16,48 @@
     <!-- Шапка сайта -->
 
     <header>
-      <nav>
-        <a href="./" class="logo"
-          ><div class="web">Web</div>
-          <div class="studio">Studio</div></a
-        >
+      <div class="container no-padding nav-box">
+        <a href="./" class="logo">
+          <div class="web">Web</div>
+          <div class="studio">Studio</div>
+        </a>
 
-        <ul class="nav">
-          <li><a href="" class="link">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
+        <nav>
+          <ul class="site-nav">
+            <li class="item"><a href="" class="link">Студия</a></li>
+            <li class="item"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
 
-        <address class="addres">
-          <a href="mailto:info@example.com">info@example.com</a>
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
+        <address class="address-box">
+          <ul class="address-list">
+            <li class="item">
+              <a href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
         </address>
-      </nav>
+      </div>
     </header>
 
     <!-- Герой -->
 
     <main>
       <section class="hero">
-        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+        <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
+        <a href="">Заказать услугу</a>
       </section>
 
       <!-- Преимущества -->
 
-      <section class="advantages">
+      <section class="advantages container">
         <h2 hidden>Преимущества</h2>
         <ul>
-          <li>
-            <img src="./" alt="Антена" width="70" />
+          <li class="item">
+            <img src="./images/antenna.png" alt="Антена" width="270" />
             <h3 class="title">Внимание к деталям</h3>
             <p class="title-inf">
               Идейные соображения, а также начало повседневной работы по
@@ -57,8 +65,8 @@
             </p>
           </li>
 
-          <li>
-            <img src="./" alt="Часы" width="70" />
+          <li class="item">
+            <img src="./images/clock.png" alt="Часы" width="270" />
             <h3 class="title">Пунктуальность</h3>
             <p class="title-inf">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -66,8 +74,8 @@
             </p>
           </li>
 
-          <li>
-            <img src="./" alt="Диаграмма" width="70" />
+          <li class="item">
+            <img src="./images/diagram.png" alt="Диаграмма" width="270" />
             <h3 class="title">Планирование</h3>
             <p class="title-inf">
               Равным образом консультация с широким активом в значительной
@@ -75,8 +83,8 @@
             </p>
           </li>
 
-          <li>
-            <img src="./" alt="Астронавт" width="70" />
+          <li class="item">
+            <img src="./images/astronaut.png" alt="Астронавт" width="270" />
             <h3 class="title">Современные технологии</h3>
             <p class="title-inf">
               Значимость этих проблем настолько очевидна, что реализация
@@ -88,21 +96,21 @@
 
       <!-- Чем мы занимаемся -->
 
-      <section class="work">
+      <section class="work container">
         <h2 class="subtitle">Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img src="./images/img1.jpg" alt="Ноутбук" width="370" />
+        <ul class="subject">
+          <li class="title">
+            <img src="./images/img1.jpg" alt="Ноутбук" width="380" />
             <h3 class="signature">Десктопные приложения</h3>
           </li>
 
-          <li>
-            <img src="./images/img2.jpg" alt="Смартфон" width="370" />
+          <li class="title">
+            <img src="./images/img2.jpg" alt="Смартфон" width="380" />
             <h3 class="signature">Мобильные приложения</h3>
           </li>
 
-          <li>
-            <img src="./images/img3.jpg" alt="Рабочий стол" width="370" />
+          <li class="title">
+            <img src="./images/img3.jpg" alt="Рабочий стол" width="380" />
             <h3 class="signature">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -111,176 +119,224 @@
       <!-- Наша команда -->
 
       <section class="team">
-        <h2 class="subtitle">Наша команда</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/nikolay-kycherenko.jpg"
-              alt="Николай Кучеренко"
-              width="270"
-            />
-            <h3 class="name">Николай Кучеренок</h3>
-            <p>Product Designer</p>
-            <ul>
-              <li>
-                <a href=""><img src="./" alt="Инстаграм" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Твиттер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Линкедин" /></a>
-              </li>
-            </ul>
-          </li>
+        <div class="container">
+          <h2 class="subtitle">Наша команда</h2>
+          <ul class="subject">
+            <li class="title">
+              <img
+                src="./images/nikolay-kycherenko.jpg"
+                alt="Николай Кучеренко"
+                width="270"
+              />
+              <h3 class="name">Николай Кучеренок</h3>
+              <p class="specialty">Product Designer</p>
+              <ul class="link-soc">
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/instagram.svg" alt="Инстаграм"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/twitter.svg" alt="Твиттер"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="Фейсбук"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/linkedin.svg" alt="Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
 
-          <li>
-            <img
-              src="./images/olga-ivanova.jpg"
-              alt="Ольга Иванова"
-              width="270"
-            />
-            <h3 class="name">Ольга Иванова</h3>
-            <p>Frontend Developer</p>
-            <ul>
-              <li>
-                <a href=""><img src="./" alt="Инстаграм" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Твиттер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Линкедин" /></a>
-              </li>
-            </ul>
-          </li>
+            <li class="title">
+              <img
+                src="./images/olga-ivanova.jpg"
+                alt="Ольга Иванова"
+                width="270"
+              />
+              <h3 class="name">Ольга Иванова</h3>
+              <p class="specialty">Frontend Developer</p>
+              <ul class="link-soc">
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/instagram.svg" alt="Инстаграм"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/twitter.svg" alt="Твиттер"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="Фейсбук"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/linkedin.svg" alt="Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
 
-          <li>
-            <img
-              src="./images/andrey-shevchenko.jpg"
-              alt="Николай Кучеренко"
-              width="270"
-            />
-            <h3 class="name">Андрей Шевченко</h3>
-            <p>Marketing</p>
-            <ul>
-              <li>
-                <a href=""><img src="./" alt="Инстаграм" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Твиттер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Линкедин" /></a>
-              </li>
-            </ul>
-          </li>
+            <li class="title">
+              <img
+                src="./images/andrey-shevchenko.jpg"
+                alt="Николай Кучеренко"
+                width="270"
+              />
+              <h3 class="name">Андрей Шевченко</h3>
+              <p class="specialty">Marketing</p>
+              <ul class="link-soc">
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/instagram.svg" alt="Инстаграм"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/twitter.svg" alt="Твиттер"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="Фейсбук"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/linkedin.svg" alt="Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
 
-          <li>
-            <img
-              src="./images/ivan-nikolaev.jpg"
-              alt="Николай Кучеренко"
-              width="270"
-            />
-            <h3 class="name">Иван Николаев</h3>
-            <p>UI Designer</p>
-            <ul>
-              <li>
-                <a href=""><img src="./" alt="Инстаграм" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Твиттер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./" alt="Линкедин" /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <li class="title">
+              <img
+                src="./images/ivan-nikolaev.jpg"
+                alt="Николай Кучеренко"
+                width="270"
+              />
+              <h3 class="name">Иван Николаев</h3>
+              <p class="specialty">UI Designer</p>
+              <ul class="link-soc">
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/instagram.svg" alt="Инстаграм"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/twitter.svg" alt="Твиттер"
+                  /></a>
+                </li>
+                <li class="title">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="Фейсбук"
+                  /></a>
+                </li class="title">
+                <li>
+                  <a href=""
+                    ><img src="./images/linkedin.svg" alt="Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Постоянные клиенты -->
 
-      <section>
-        <h2 class="subtitle">Постоянные клиенты</h2>
-        <ul>
-          <li>
-            <a href="" class="customer"
-              ><img src="./" alt="Первый клиент" width="45"
-            /></a>
-          </li>
+      <section class="clients">
+        <div class="container">
+          <h2 class="subtitle">Постоянные клиенты</h2>
+          <ul>
+            <li class="item">
+              <a href=""
+                ><img src="./images/logo1.svg" alt="Первый клиент" width="45"
+              /></a>
+            </li>
 
-          <li>
-            <a href="" class="customer"
-              ><img src="./" alt="Второй клиент" width="40"
-            /></a>
-          </li>
-          <li>
-            <a href="" class="customer"
-              ><img src="./" alt="Третий клиент" width="41"
-            /></a>
-          </li>
-          <li>
-            <a href="" class="customer"
-              ><img src="./" alt="Четвертый клиент" width="80"
-            /></a>
-          </li>
-          <li>
-            <a href="" class="customer"
-              ><img src="./" alt="Пятый клиент" width="59"
-            /></a>
-          </li>
-          <li>
-            <a href="" class="customer"
-              ><img src="./" alt="Шестой клиент" width="89"
-            /></a>
-          </li>
-        </ul>
+            <li class="item">
+              <a href=""
+                ><img src="./images/logo2.svg" alt="Второй клиент" width="40"
+              /></a>
+            </li>
+            <li class="item">
+              <a href=""
+                ><img src="./images/logo3.svg" alt="Третий клиент" width="41"
+              /></a>
+            </li>
+            <li class="item">
+              <a href=""
+                ><img src="./images/logo4.svg" alt="Четвертый клиент" width="80"
+              /></a>
+            </li>
+            <li class="item">
+              <a href=""
+                ><img src="./images/logo5.svg" alt="Пятый клиент" width="59"
+              /></a>
+            </li>
+            <li class="item">
+              <a href=""
+                ><img src="./images/logo6.svg" alt="Шестой клиент" width="89"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Футер -->
 
-    <footer>
-      <a href="./" class="logo">
-        <div class="web">Web</div>
-        <div class="studio-white">Studio</div>
-      </a>
-      <address>
-        <span>г. Киев, пр-т Леси Украинки, 26</span>
-        <a href="mailto:info@example.com" class="link">info@example.com</a>
-        <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-      </address>
-      <div>
-        <p class="title">Присоединяйтесь</p>
-        <ul>
-          <li>
-            <a href=""><img src="./" alt="Инстаграм" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./" alt="Твиттер" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./" alt="Фейсбук" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./" alt="Линкедин" /></a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <p class="title">Подпишитесь на розсылку</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <div class="box-link">
+            <a href="./" class="logo">
+              <div class="web">Web</div>
+              <div class="studio-white">Studio</div>
+            </a>
+            <div class="footer-add">
+              <address>
+                <ul>
+                  <li class="item"><span>г. Киев, пр-т Леси Украинки, 26</span></li>
+                  <li class="item"><a href="mailto:info@example.com" class="link">info@example.com</a><br></li>
+                  <li class="item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                </ul>
+              </address>
+            </div>
+          </div>
+          
+          <div class="connect">
+            <p class="title">Присоединяйтесь</p>
+            <ul class="connect-box">
+              <li class="item">
+                <a href=""><img src="./" alt="Инстаграм" /></a>
+              </li>
+              <li class="item">
+                <a href=""><img src="./ alt="Твиттер" /></a>
+              </li>
+              <li class="item">
+                <a href=""><img src="./" alt="Фейсбук" /></a>
+              </li>
+              <li class="item">
+                <a href=""><img src="./" alt="Линкедин" /></a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="subskriber">
+            <p class="title">Подпишитесь на розсылку</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
